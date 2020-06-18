@@ -12,24 +12,42 @@ public class HomePage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	@FindBy(id = "search_query_top")
-	public WebElement search;
+	@FindBy(id = "js-link-box-en")
+	public WebElement EnglishLan;
 	
-	@FindBy(className = "login")
-	public WebElement signin;
+	@FindBy(id = "js-link-box-es")
+	public WebElement EspanyolLan;
 
-	public WebElement item(String item) {
-		String css = "#center_column a.product-name[title='"+item+"']";
-		return Driver.getDriver().findElement(By.cssSelector(css));
+	@FindBy(id = "js-link-box-ru")
+	public WebElement RusskiyLan;
 	
-	}
+	@FindBy(id = "js-link-box-it")
+	public WebElement ItalianoLan;
+	
+	@FindBy(id = "js-link-box-pt")
+	public WebElement PortuguesLan;
 
-	/*
-	 * takes a name of a product, builds a css based on the name
-	 * and locates the product with the new css
-	 * and returns it
-	 * @param product name
-	 */
+	@FindBy(id = "js-link-box-ja")
+	public WebElement NigongoLan;
+
+	@FindBy(id = "js-link-box-de")
+	public WebElement DeutschLan;
+	
+	@FindBy(id = "js-link-box-fr")
+	public WebElement FrançaisLan;
+	
+	@FindBy(id = "js-link-box-zh")
+	public WebElement ZhongwenLan;
+	
+	@FindBy(id = "js-link-box-pl")
+	public WebElement PolskiLan;
+
+	@FindBy (id = "searchInput")
+	public WebElement SearchItem;
+	
+	
+	@FindBy(xpath = "//*[@class='pure-button pure-button-primary-progressive']")
+	public WebElement ClickSeacrh;
 	
 	
 }

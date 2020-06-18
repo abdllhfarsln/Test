@@ -1,11 +1,8 @@
 Feature: home page search functionality
+@temp
+Scenario: verify myTestCases
+Given Navigate to url and verify that the user arrives on the right page
+When Verify that the elements for the top ten languages are visible on the page
+Then verify that the user is directed to the page that was searched for
 
-Scenario: verify search term
-Given the user is on the home page
-When the user enters a search term
-Then the seatch box should contain the search term
 
-Scenario:
-Given the user is on the home page
-When the user gets the title of the page
-Then title should be Search - My Store

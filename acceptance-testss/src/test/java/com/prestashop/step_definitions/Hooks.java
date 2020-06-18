@@ -21,12 +21,6 @@ public class Hooks {
 	Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 	}
 	
-	 @Before("@amazon_check")
-	 public void setUpAmazon() {
-		 Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		 Driver.getDriver().manage().window().fullscreen();
-		 Driver.getDriver().get("http://amazon.com");
-		 }
 	
 	
 	@After
@@ -40,6 +34,6 @@ public class Hooks {
 		
 		
 	}
-		Driver.closeDriver();
+		//Driver.closeDriver();
 	}
 }
