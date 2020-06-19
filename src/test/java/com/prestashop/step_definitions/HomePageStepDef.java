@@ -14,7 +14,7 @@ public class HomePageStepDef {
 	public void navigate_to_url_and_verify_that_the_user_arrives_on_the_right_page() {
 	    
 		String ActualTitle = Driver.getDriver().getTitle();
-		String ExpectedTitle = "HelloWikipedia";
+		String ExpectedTitle = "Wikipedia";
 		
 		Assert.assertEquals(ActualTitle, ExpectedTitle);
 		
