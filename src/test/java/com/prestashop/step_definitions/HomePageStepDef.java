@@ -14,7 +14,7 @@ public class HomePageStepDef {
 	public void navigate_to_url_and_verify_that_the_user_arrives_on_the_right_page() {
 	    
 		String ActualTitle = Driver.getDriver().getTitle();
-		String ExpectedTitle = "Wikipedia";
+		String ExpectedTitle = "HelloWikipedia";
 		
 		Assert.assertEquals(ActualTitle, ExpectedTitle);
 		
@@ -35,8 +35,8 @@ public class HomePageStepDef {
 		homepage.EspanyolLan.isDisplayed();
 		System.out.println(homepage.DeutschLan.getText());
 		
-		homepage.FrançaisLan.isDisplayed();
-		System.out.println(homepage.FrançaisLan.getText());
+		homepage.FranÃ§aisLan.isDisplayed();
+		System.out.println(homepage.FranÃ§aisLan.getText());
 		
 		homepage.ItalianoLan.isDisplayed();
 		System.out.println(homepage.ItalianoLan.getText());
